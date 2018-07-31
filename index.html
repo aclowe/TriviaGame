@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <title>Jurassic Park Trivia</title>
+</head>
+
+<body style="background-image:url(assets/images/background.jpg)">
+
+    <div id="questionContainer" class="ml-5 mr-5">
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <h1>Jurassic Park Trivia</h1>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                    <button type="button" class="btn btn-success" id="start">Click Here to Start!
+                    </button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-danger" id="timeRemaining">Time Remaining:
+                </button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary btn-block" id="questionField">Question
+                </button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <button type="button" class="btn btn-secondary btn-block text-left answerChoice" id="answerFieldA">Answer 1
+                </button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <button type="button" class="btn btn-secondary btn-block text-left answerChoice" id="answerFieldB">Answer 2
+                </button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <button type="button" class="btn btn-secondary btn-block text-left answerChoice" id="answerFieldC">Answer 3
+                </button>
+            </div>
+        </div>
+            <div class="row text-center mt-3">
+                <div class="col-sm">
+                    <button type="button" class="btn btn-secondary btn-block text-left answerChoice" id="answerFieldD">Answer 4
+                    </button>
+                </div>
+            </div>
+    </div>
+
+    <div id="answerContainer"  class="ml-5 mr-5 collapse">
+        <div class="row text-center mt-3">
+                <div class="col-sm">
+                    <button type="button" class="btn btn-warning btn-block" id="statusMessage">Message:  
+                    </button>
+                </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <button type="button" class="btn btn-success btn-block text-left" id="correctAnswer">Correct Answer: 
+                </button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <img src="assets/images/question1.jpg" class="w3-border w3-padding" alt="Answer Image">
+            </div>
+        </div>
+    </div>
+
+    <div id="finalContainer"  class="ml-5 mr-5 collapse">
+        <div class="row text-center mt-3">
+                <div class="col-sm">
+                    <button type="button" class="btn btn-warning btn-block" id="correctAnswerCount">Correct Answers:  
+                    </button>
+                </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <button type="button" class="btn btn-success btn-block text-left" id="incorrectAnswerCount">Incorrect Answers: 
+                </button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-sm">
+                <button type="button" class="btn btn-success btn-block text-left" id="unansweredCount">Unanswered Questions: 
+                </button>
+            </div>
+        </div>
+    </div>
+
+ <!-- jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<script src="assets/javascript/app.js">
+</script>
+
+</body>
+
+</html>
