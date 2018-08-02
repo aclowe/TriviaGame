@@ -7,25 +7,25 @@ $(document).ready(function() {
             question:"In what year was the original Jurassic Park film released?",
             choices:["1989" , "1990" , "1993", "1994"],
             correctAnswer:"1993",
-            image: "<img src=\"assets/images/question1.jpg\" alt=question1image>",
+            image: "assets/images/question1.jpg",
         },
         {
             question:"What is the name of the fictional island Jurassic Park is situated on?",
             choices:["San Lorenzo" , "Isla Nublar" , "Koholint Island", "Isle of Naboombu"],
             correctAnswer: "Isla Nublar",
-            image: "<img src=\"assets/images/question2.jpg\" alt=question2image>",
+            image: "assets/images/question2.jpg",
         },
         {
             question:"What prevents the Jurassic Park dinosaurs from reproducing?",
             choices:["They're all male" , "They're all female" , "Dinosaur contraceptives", "They just don't fancy each other"],
             correctAnswer: "They're all female",
-            image: "<img src=\"assets/images/question3.jpg\" alt=question3image>",
+            image: "assets/images/question3.jpg",
         },
         {
             question:"What was Jurassic Park's tagline?",
             choices:["ARRRRGH! DINOSAURS!" , "Have we got a vacation for you!" , "Buy the ticket, take the ride", "An adventure 65 million years in the making"],
             correctAnswer: "An adventure 65 million years in the making",
-            image: "<img src=\"assets/images/question4.jpg\" alt=question4image>",
+            image: "assets/images/question4.jpg",
         },
     ]
     
@@ -111,7 +111,7 @@ $(document).ready(function() {
         if (i > data.length - 1) {
             $("#correctAnswerCount").html("Correct Answers: " + correctAnswerCount);
             $("#incorrectAnswerCount").html("Incorrect Answers: " + incorrectAnswerCount);
-            $("#unansweredCountt").html("Unanswered Questions: " + unansweredCount);
+            $("#unansweredCount").html("Unanswered Questions: " + unansweredCount);
             resetFinalView();
         }
 
@@ -122,11 +122,13 @@ $(document).ready(function() {
         $("#answerFieldC").html(data[i].choices[2]);
         $("#answerFieldD").html(data[i].choices[3]);
             
-            //define currentQuestion and correctAnswer
-            currentQuestion = (data[i].question);
-            correctAnswer = (data[i].correctAnswer);
-            console.log("question: ", data[i].question);
-            console.log("correctAnswer:: ", data[i].correctAnswer);
+        //define currentQuestion and correctAnswer
+        currentQuestion = (data[i].question);
+        correctAnswer = (data[i].correctAnswer);
+        console.log("question: ", data[i].question);
+        console.log("correctAnswer: ", data[i].correctAnswer);
+        //define image for answer
+        $("#answerImage").attr("src", data[i].image);
             
             return;
         }
