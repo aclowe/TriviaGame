@@ -177,4 +177,31 @@ $(document).ready(function() {
             answerTimer(5)
             }
     });
+
+    //user clicks restart to begin game
+    $("#restart").on("click", function() {
+        console.log("restart Clicked");
+        
+        //reset variables and view
+        currentQuestion = "";
+        userAnswer = "";
+        correctAnswer = "";
+        correctAnswerCount = 0;
+        incorrectAnswerCount = 0;
+        unansweredCount = 0;
+        answerCount;
+        i = 0;
+        answerCounter;
+        questionCount;
+        questionCounter;
+        resetInitialView();
+
+        //set timer for 30 seconds
+        questionTimer(10);
+    
+        //run function startQuestion
+        selectQuestion();
+
+    });
+
 })
